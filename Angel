@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angel Diaz - Social Media Algorithms</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #ff007f, #7f00ff, #00ffd5);
+      color: white;
+      text-align: center;
+    }
+    header {
+      padding: 30px;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 10px black;
+      animation: neonGlow 2s infinite alternate;
+    }
+    @keyframes neonGlow {
+      from { text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f; }
+      to { text-shadow: 0 0 20px #00ffd5, 0 0 40px #7f00ff; }
+    }
+    section {
+      margin: 40px auto;
+      max-width: 900px;
+      padding: 20px;
+      background: rgba(0,0,0,0.6);
+      border-radius: 15px;
+      box-shadow: 0 0 20px #000;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+    iframe {
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .easter-egg {
+      display: none;
+    }
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    🌐 Angel Diaz – The Internet & Social Media Algorithms 🚗💨
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>My name is <b>Angel Diaz</b>. After high school, I want to study <b>Engineering</b>.  
+    I’m passionate about cars, technology, and how the Internet connects the world — just like how racing connects people across Japan and the globe.</p>
+  </section>
+
+  <section>
+    <h2>Unit 1 & 2 Vocabulary</h2>
+    <ul style="text-align:left;">
+      <li><b>Network:</b> A group of connected computers or devices that share information.</li>
+      <li><b>Protocol:</b> Rules that allow devices to communicate across the Internet.</li>
+      <li><b>IP Address:</b> A unique number given to each device on the Internet.</li>
+      <li><b>Bandwidth:</b> The amount of data that can be sent through a connection.</li>
+      <li><b>Algorithm:</b> A step-by-step process computers use to solve problems or make decisions.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>My Topic: Social Media Algorithms</h2>
+    <p>Social media algorithms decide what content you see on platforms like Instagram, TikTok, and YouTube.  
+    They track what you like, comment on, and share — then recommend similar posts.  
+    This makes your feed feel more personalized, but it can also create <b>filter bubbles</b> where you only see content you already agree with.  
+    Understanding algorithms helps us use social media in smarter and healthier ways.</p>
+  </section>
+
+  <section>
+    <h2>Pictures</h2>
+    <img src="https://cdn.pixabay.com/photo/2017/08/30/01/05/car-2694669_1280.jpg" alt="JDM Car">
+    <img src="https://cdn.pixabay.com/photo/2018/01/23/12/05/japan-3101615_1280.jpg" alt="Tokyo Street">
+  </section>
+
+  <section>
+    <h2>Video: How the Internet Works</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AEaKrq3SpW8" 
+      title="How the Internet Works" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section class="easter-egg">
+    <h2>🎉 Secret JDM Easter Egg</h2>
+    <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/japan-3089928_1280.jpg" alt="Hidden JDM Car">
+  </section>
+
+  <footer>
+    <p>© 2025 Angel Diaz | Internet Project 🚀 | Theme: Fast & Furious + Demon Slayer + JDM Cars</p>
+    <p>Click anywhere three times fast to unlock a hidden surprise!</p>
+  </footer>
+
+  <script>
+    // Easter Egg activation: Triple click anywhere
+    let clicks = 0;
+    document.body.addEventListener("click", () => {
+      clicks++;
+      if (clicks === 3) {
+        document.querySelector(".easter-egg").style.display = "block";
+        alert("🔥 You unlocked the JDM Easter Egg! 🔥");
+      }
+      setTimeout(() => clicks = 0, 1000);
+    });
+  </script>
+</body>
+</html>
